@@ -4,13 +4,55 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 	
 	<title>Resume</title>
 	<style>
-		
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto;
+	  grid-gap: 10px;
+	  padding: 50px;
+	}
+
+	.grid-container > div {
+	  background-color: #D4DBDB;
+	  border: 1px solid black;
+	  text-align: center;
+	  padding: 20px 0;
+	  }
+	.heading{
+		padding:20px;
+		text-align:center;
+		font-family: "Sofia";
+		font-size: 32px;
+	}
+	.experienceBox{
+		 background-color: lightgrey;
+		 width: 50%;
+	     border: 1px solid black;
+		 padding: 40px;
+		 text-align: center;
+		 margin:40px;
+		 border-radius: 25px;
+	}
+	.boxShadow{
+		box-shadow: 10px 10px 5px grey;
+	}
+	@media all and (max-width: 600px) {
+	  body {
+		background-color: lightblue;
+	  }
+	  .grid-container {
+	  display: grid;
+	  grid-template-columns: auto;
+	  grid-gap: 10px;
+	  padding: 40px;
+	}
+	}
 	</style>
 </head>
-<body style="background-color:#D2F4FD">
+<body>
 	
 	<!--Used Bootstrap for the navigation bar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,8 +72,38 @@
 	</nav>
 	
 	<!--Cover Photo -->
-	<div style="width: 100%;">
+	<div style="max-width:100%">
 		<img src="images/p.jpg" alt="Cover Photo">
+	</div>
+	
+	<!--Experience -->
+	<h1 class="heading"><b>Experiences</b></h1>
+	<div class="grid-container">
+	  
+		<div class="experienceBox boxShadow">
+		<p style="font-size:15px;"><b>Senoark, Dhaka — Software Engineer(Intern)</b></p>
+		<p style="font-size:11px;">October 2019 - January 2020</p>
+		<p style="font-size:13px;">Worked as a software engineer intern there. I made websites using</p>
+		<p style="font-size:13px;">WordPress. I edited and fixed their existing websites. I was associated </p>
+		<p style="font-size:13px;">with the design of their LegalX mobile application.</p>
+		<p style="font-size:13px;">Contact:</p>
+		<p style="font-size:13px;">Muiz Shahabuddin</p>
+		<p style="font-size:13px;">-</p>
+		<p style="font-size:13px;">01879836150</p>
+		</div>
+	  
+		<div class="experienceBox boxShadow">
+		<p style="font-size:15px;"><b>Morangesoft, Peru — Software Engineer(Entry)</b></p>
+		<p style="font-size:11px;">May 2020 - </p>
+		<p style="font-size:13px;">Worked as a software engineer there. I made websites using HTML5, CSS3,</p>
+		<p style="font-size:13px;"> Javascript, Bootstrap and PHP. I edited and fixed their existing websites. I was associated </p>
+		<p style="font-size:13px;">with the outside projects they received.</p>
+		<p style="font-size:13px;">Contact:</p>
+		<p style="font-size:13px;">Mikhail Quesada</p>
+		<p style="font-size:13px;">-</p>
+		<p style="font-size:13px;">mq@morangesoft.com</p>
+		</div>
+	  
 	</div>
 </body>
 </html>
