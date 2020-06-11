@@ -40,9 +40,7 @@
 	.boxShadow{
 		box-shadow: 10px 10px 5px grey;
 	}
-	.skillBox{
-		
-	}
+	
 	
 	@media all and (max-width: 600px) {
 	  body {
@@ -55,6 +53,32 @@
 	  padding: 40px;
 	}
 	}
+	.skillGrid {
+	  display: grid;
+	  grid-template-columns: auto auto auto auto;
+	  grid-gap: 10px;
+	  padding: 10px;
+	}
+
+	.skillGrid > div {
+	  text-align: center;
+	  font-size: 30px;
+	}
+	
+	.skillButton{
+		background-color: #DA007A;
+		border: none;
+		color: white;
+		padding: 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 12px;
+	}
+	
 	.card {
 	  background-color: transparent;
 	  width: 500px;
@@ -94,6 +118,7 @@
 	  color: white;
 	  transform: rotateY(180deg);
 	}
+	
 	</style>
 </head>
 <body>
@@ -150,13 +175,26 @@
 	  
 	</div>
 	
+	<!--Skills -->
+	
 	<h1 class="heading"><b>Skills</b></h1>
 	
-	<div class="skillBox">
-		
+	<div class="skillGrid">
+	  <div><button class="skillButton">Html5</button></div>
+	  <div><button class="skillButton">Java</button></div>
+	  <div><button class="skillButton">Javascript</button></div>  
+	  <div><button class="skillButton">React</button></div>
+	  <div><button class="skillButton">CSS3</button></div>
+	  <div><button class="skillButton">Bootstrap4</button></div>
+	  <div><button class="skillButton">C</button></div>
+	  <div><button class="skillButton">WordPress</button></div>
+	  <div><button class="skillButton">Wix</button></div>
 	</div>
 	
+	<!--About me-->
+	
 	<h1 class="heading"><b>More Information</b></h1>
+	
 	<div style="text-align:center;">
 	<div class="card">
 	  <div class="card-inner">
@@ -172,7 +210,11 @@
 	</div>
 	</div>
 	<script>
-		
+		$(document).ready(function(){
+		  $(".skillButton").hover(function(){
+			$(".skillButton").toggle("slow");
+		  });
+		});
 	</script>
 </body>
 </html>
