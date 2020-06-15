@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
 	<title>Resume</title>
@@ -24,15 +27,14 @@
 	  }
 	.heading{
 		padding:20px;
-		text-align:center;
 		font-family: "Courier New", Courier, monospace;
 		font-size: 32px;
-		color: teal;
+		color: #45A29E;
 	}
 	.heading:after {
 		text-align:center;
 		content: " ";
-		background-color: #6adbd5;
+		background-color: #C5C6C7;
 		display: block;
 		width: 2em;
 		height: 9px;
@@ -50,18 +52,6 @@
 		box-shadow: 10px 10px 5px grey;
 	}
 	
-	
-	@media all and (max-width: 600px) {
-	  body {
-		background-color: lightblue;
-	  }
-	  .grid-container {
-	  display: grid;
-	  grid-template-columns: auto;
-	  grid-gap: 10px;
-	  padding: 40px;
-	}
-	}
 	.skillGrid {
 	  display: grid;
 	  grid-template-columns: auto auto auto auto;
@@ -75,9 +65,9 @@
 	}
 	
 	.skillButton{
-		background-color: #DA007A;
+		background-color: #66FCF1;
 		border: none;
-		color: white;
+		color: black;
 		padding: 20px;
 		text-align: center;
 		text-decoration: none;
@@ -106,7 +96,7 @@
 	}
 
 	.card:hover .card-inner {
-	  transform: rotateY(180deg);
+	  transform: rotateY(540deg);
 	}
 
 	.card-front, .card-back {
@@ -123,17 +113,78 @@
 	}
 
 	.card-back {
-	  background-color: #2980b9;
+	  background-color: #1F2833;
 	  color: white;
 	  transform: rotateY(180deg);
 	}
+	​.projectGrid {
+	  display: grid;
+	  grid-template-columns: auto auto auto;
+	  grid-gap: 10px;
+	  background-color: #1F2833;
+	  padding: 30px;
+	}
+
+	.projectGrid > div {
+	  background-color: rgba(255, 255, 255, 0.8);
+	  border: 1px solid black;
+	  text-align: center;
+	  font-size: 30px;
+	  
+	}
+	.rotate1{
+	-webkit-transform:rotate(-6deg);
+	  -o-transform:rotate(-6deg);
+	  -moz-transform:rotate(-6deg);
+	}
+	.rotate2{
+	-webkit-transform:rotate(6deg);
+	  -o-transform:rotate(6deg);
+	  -moz-transform:rotate(6deg);
+	}
 	
+	.interestGrid {
+	  display: grid;
+	  grid-template-columns: auto auto auto;
+	  grid-gap: 10px;
+	  background-color: #1F2833;
+	  padding: 10px;
+	}
+
+	.interestGrid > div {
+	  color: #66FCF1;
+	  border: 1px solid black;
+	  text-align: center;
+	  font-size: 20px;
+	}
+	@media all and (max-width: 600px) {
+	  .grid-container {
+	  display: grid;
+	  grid-template-columns: auto;
+	  grid-gap: 10px;
+	  padding: 40px;
+	}
+	.interestGrid {
+	  display: grid;
+	  grid-template-columns: auto;
+	  grid-gap: 10px;
+	  background-color: #1F2833;
+	  padding: 10px;
+	}
+
+	.interestGrid > div {
+	  color: #66FCF1;
+	  border: 1px solid black;
+	  text-align: center;
+	  font-size: 10px;
+	}
+	}
 	</style>
 </head>
-<body>
+<body style="background-color: #0B0C10">
 	
 	<!--Used Bootstrap for the navigation bar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand" href="#">Navbar</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -207,6 +258,25 @@
 	
 	<h1 class="heading"><b>Projects</b></h1>
 	
+	<div class="interestGrid">
+	  <div>
+		<p><a href="https://sadaafchowdhury.github.io/resume/">https://sadaafchowdhury.github.io/resume/</a></p>
+		<p>Made using Html5, CSS3, Bootsrtap4, Jquery and JavaScript.</p>
+	  </div>
+	  <div>
+		<p><a href="https://github.com/SadaafChowdhury/cse482">https://github.com/SadaafChowdhury/cse482</a></p>
+		<p>Made using Html5, CSS3, JavaScript, php and MySQL. Made it for a course as a team. I was in charge of the front-end part. It is a website on an online grocery delivery system.</p>
+	  </div>
+	  <div>
+		<p><a href="https://bitbucket.org/nabeel_mohammed/fall2019.cse327.9.t4/">https://bitbucket.org/nabeel_mohammed/fall2019.cse327.9.t4/</a></p>
+		<p>Made using Django. Made it for a project in a course. It is a website on an online shop for furniture.</p>
+	  </div>  
+	  <div>
+		<p><a href="https://github.com/SadaafChowdhury/zoomv">https://github.com/SadaafChowdhury/zoomv</a></p>
+		<p>Made using WordPress. Made it for the company I was working at. It is a website for renting virtual addresses for businesses.</p>
+	  </div>
+	</div>
+	
 	<!--About me-->
 	
 	<h1 class="heading"><b>More Information</b></h1>
@@ -221,10 +291,25 @@
 		  <h1>Sadaaf Chowdhury</h1> 
 		  <p>Junior Front End Developer</p> 
 		  <p>c.sadaaf@gmail.com</p>
+		  <p>North South University</p>
+		  <p>BSCSE</p>
+		  <p>September, 2016 - September, 2020</p>
+		  <p>Fast Learner</p>
 		</div>
 	  </div>
 	</div>
 	</div>
+	
+	<!--Interests -->
+	
+	<h1 class="heading"><b>Interests</b></h1>
+	
+	<div class="interestGrid">
+	  <div><img src="images/i1.jpg" alt="Problem Solving"></div>
+	  <div><img src="images/i2.jpg" alt="Gaming"></div>
+	  <div><img src="images/i3.jpg" alt="Travelling"></div>  
+	</div>
+
 	<script>
 		$(document).ready(function(){
 		  $(".skillButton").hover(function(){
