@@ -9,9 +9,42 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<title>Resume</title>
 	<style>
+	.bgImage {
+	  /* The image used */
+	  
+	  
+	  /* Add the blur effect */
+	  filter: blur(8px);
+	  -webkit-filter: blur(8px);
+	  
+	  /* Full height */
+	  height: 100%; 
+	  
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+
+	/* Position text in the middle of the page/image */
+	.bgText {
+	  color: white;
+	  font-weight: bold;
+	  border: 3px solid #f1f1f1;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  z-index: 2;
+	  width: 80%;
+	  padding: 20px;
+	  text-align: center;
+	}
+
 	.grid-container {
 	  display: grid;
 	  grid-template-columns: auto auto;
@@ -117,31 +150,6 @@
 	  color: white;
 	  transform: rotateY(180deg);
 	}
-	​.projectGrid {
-	  display: grid;
-	  grid-template-columns: auto auto auto;
-	  grid-gap: 10px;
-	  background-color: #1F2833;
-	  padding: 30px;
-	}
-
-	.projectGrid > div {
-	  background-color: rgba(255, 255, 255, 0.8);
-	  border: 1px solid black;
-	  text-align: center;
-	  font-size: 30px;
-	  
-	}
-	.rotate1{
-	-webkit-transform:rotate(-6deg);
-	  -o-transform:rotate(-6deg);
-	  -moz-transform:rotate(-6deg);
-	}
-	.rotate2{
-	-webkit-transform:rotate(6deg);
-	  -o-transform:rotate(6deg);
-	  -moz-transform:rotate(6deg);
-	}
 	
 	.interestGrid {
 	  display: grid;
@@ -153,9 +161,95 @@
 
 	.interestGrid > div {
 	  color: #66FCF1;
-	  border: 1px solid black;
 	  text-align: center;
 	  font-size: 20px;
+	}
+	
+	.footer
+	{
+	  background-color:#1F2833;
+	  padding:45px 0 20px;
+	  font-size:15px;
+	  line-height:24px;
+	  color:#737373;
+	}
+
+	.footer .social-icons
+	{
+	  text-align:center;
+	}
+	.footer .social-icons a
+	{
+	  width:40px;
+	  height:40px;
+	  line-height:40px;
+	  margin-left:6px;
+	  margin-right:0;
+	  border-radius:100%;
+	  background-color:#33353d;
+	}
+
+	.social-icons
+	{
+	  padding-left:0;
+	  margin-bottom:0;
+	  list-style:none;
+	}
+	.social-icons li
+	{
+	  display:inline-block;
+	  margin-bottom:4px;
+	}
+	.social-icons li.title
+	{
+	  margin-right:15px;
+	  text-transform:uppercase;
+	  color:#96a2b2;
+	  font-weight:700;
+	  font-size:13px;
+	}
+	.social-icons a{
+	  background-color:#eceeef;
+	  color:#818a91;
+	  font-size:16px;
+	  display:inline-block;
+	  line-height:44px;
+	  width:44px;
+	  height:44px;
+	  text-align:center;
+	  margin-right:8px;
+	  border-radius:100%;
+	  -webkit-transition:all .2s linear;
+	  -o-transition:all .2s linear;
+	  transition:all .2s linear;
+	}
+	.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+	{
+	  color:#fff;
+	  background-color:#29aafe;
+	}
+	.social-icons.size-sm a
+	{
+	  line-height:34px;
+	  height:34px;
+	  width:34px;
+	  font-size:14px;
+	}
+	.social-icons a.facebook:hover
+	{
+	  background-color:#3b5998;
+	}
+	.social-icons a.twitter:hover
+	{
+	  background-color:#00aced;
+	}
+	.social-icons a.linkedin:hover
+	{
+	  background-color:#007bb6;
+	}
+	.social-icons a.github:hover
+	{
+	  background-color:#000000;
 	}
 	@media all and (max-width: 600px) {
 	  .grid-container {
@@ -174,7 +268,6 @@
 
 	.interestGrid > div {
 	  color: #66FCF1;
-	  border: 1px solid black;
 	  text-align: center;
 	  font-size: 10px;
 	}
@@ -185,28 +278,37 @@
 	
 	<!--Used Bootstrap for the navigation bar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Navbar</a>
+	  <a class="navbar-brand" href="#">SC</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
-		  <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		  <a class="nav-item nav-link" href="#">Experience</a>
-		  <a class="nav-item nav-link" href="#">Skills</a>
-		  <a class="nav-item nav-link" href="#">Interests</a>
-		  <a class="nav-item nav-link" href="#">Projects</a>
+		  <a class="nav-item nav-link" href="#experience">Experience</a>
+		  <a class="nav-item nav-link" href="#skills">Skills</a>
+		  <a class="nav-item nav-link" href="#projects">Projects</a>
+		  <a class="nav-item nav-link" href="#moreInfo">More Information</a>
+		  <a class="nav-item nav-link" href="#interests">Interests</a>
+		  
 		</div>
 	  </div>
 	</nav>
 	
-	<!--Cover Photo -->
+	<!--Cover Photo ->
 	<div style="max-width:100%;height:100%;">
 		<img style="max-width:100%;height:100%;" src="images/4.jpg" alt="Cover Photo">
 	</div>
+	-->
+	<div class="bgImage"><img style="width:100%;" src="images/4.jpg" alt="cover"></div>
+
+	<div class="bgText">
+	  
+	  <h1 style="font-size:50px">I am Sadaaf Chowdhury</h1>
+	  <p>And I'm a Web Developer</p>
+	</div>
 	
 	<!--Experience -->
-	<div class="heading"><h1><b>Experiences</b></h1>
+	<div id="experience" class="heading"><h1><b>Experiences</b></h1>
 	</div>
 	<div class="grid-container">
 	  
@@ -238,7 +340,7 @@
 	
 	<!--Skills -->
 	
-	<h1 class="heading"><b>Skills</b></h1>
+	<h1 id="skills" class="heading"><b>Skills</b></h1>
 	
 	<div class="skillGrid">
 	  <div><button class="skillButton">Html5</button></div>
@@ -256,7 +358,7 @@
 	
 	<!--Projects-->
 	
-	<h1 class="heading"><b>Projects</b></h1>
+	<h1 id="projects" class="heading"><b>Projects</b></h1>
 	
 	<div class="interestGrid">
 	  <div>
@@ -279,7 +381,7 @@
 	
 	<!--About me-->
 	
-	<h1 class="heading"><b>More Information</b></h1>
+	<h1 id="moreInfo"class="heading"><b>More Information</b></h1>
 	
 	<div style="text-align:center;">
 	<div class="card">
@@ -302,14 +404,25 @@
 	
 	<!--Interests -->
 	
-	<h1 class="heading"><b>Interests</b></h1>
+	<h1 id="interests" class="heading"><b>Interests</b></h1>
 	
 	<div class="interestGrid">
 	  <div><img src="images/i1.jpg" alt="Problem Solving"></div>
 	  <div><img src="images/i2.jpg" alt="Gaming"></div>
 	  <div><img src="images/i3.jpg" alt="Travelling"></div>  
 	</div>
-
+	<br><br>
+  <!-- Footer -->
+    <footer class="footer">
+          <div>
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/sadaaf.chowdhury.5"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/SadaafC"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="github" href="https://github.com/SadaafChowdhury"><i class="fa fa-github"></i></a></li>
+              <li><a class="linkedin" href="https://bd.linkedin.com/in/sadaaf-chowdhury-110aa3195"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+    </footer>
 	<script>
 		$(document).ready(function(){
 		  $(".skillButton").hover(function(){
