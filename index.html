@@ -252,7 +252,20 @@
 	  background-color:#000000;
 	}
 	@media all and (max-width: 600px) {
-	  .grid-container {
+	.bgText {
+	  color: white;
+	  font-weight: bold;
+	  border: 3px solid #f1f1f1;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  z-index: 2;
+	  width: 80%;
+	  padding: 20px;
+	  text-align: center;
+	}
+	.grid-container {
 	  display: grid;
 	  grid-template-columns: auto;
 	  grid-gap: 10px;
@@ -303,7 +316,7 @@
 
 	<div class="bgText">
 	  
-	  <h1 style="font-size:50px">I am Sadaaf Chowdhury</h1>
+	  <h1>I am Sadaaf Chowdhury</h1>
 	  <p>And I'm a Web Developer</p>
 	</div>
 	
