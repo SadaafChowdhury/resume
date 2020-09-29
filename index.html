@@ -11,7 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<title>Resume</title>
+	<title>Portfolio</title>
 	<style>
 	.bgImage {
 	  filter: blur(6px);
@@ -67,7 +67,7 @@
 	}
 	.experienceBox{
 		 background-color: lightgrey;
-		 width: 50%;
+		 width: 80%;
 	     border: 1px solid black;
 		 padding: 40px;
 		 text-align: center;
@@ -91,7 +91,7 @@
 	}
 	
 	.skillButton{
-		background-color: #66FCF1;
+		background-color: #00D7FF;
 		border: none;
 		color: black;
 		padding: 20px;
@@ -143,8 +143,8 @@
 	}
 
 	.card-back {
-	  background-color: #1F2833;
-	  color: white;
+	  background-color: #d0d0d0;
+	  color: black;
 	  transform: rotateY(180deg);
 	}
 	
@@ -152,12 +152,13 @@
 	  display: grid;
 	  grid-template-columns: auto auto auto;
 	  grid-gap: 10px;
-	  background-color: #1F2833;
+	  background-color: #f6f6f6;
 	  padding: 10px;
+	  width:100%;
 	}
 
 	.interestGrid > div {
-	  color: #66FCF1;
+	  color: #00D7FF;
 	  text-align: center;
 	  font-size: 20px;
 	}
@@ -276,19 +277,19 @@
 	  display: grid;
 	  grid-template-columns: auto;
 	  grid-gap: 10px;
-	  background-color: #1F2833;
+	  background-color: #f6f6f6;
 	  padding: 10px;
 	}
 
 	.interestGrid > div {
-	  color: #66FCF1;
+	  color: #00D7FF;
 	  text-align: center;
 	  font-size: 10px;
 	}
 	}
 	</style>
 </head>
-<body style="background-color: #0B0C10">
+<body style="background-color: ">
 	
 	<!--Used Bootstrap for the navigation bar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -329,8 +330,10 @@
 		<div class="experienceBox boxShadow">
 		<p style="font-size:15px;"><b>Senoark, Dhaka — Software Engineer(Intern)</b></p>
 		<p style="font-size:11px;">October 2019 - January 2020</p>
-		<p style="font-size:13px;">Worked as a software engineer intern there. I made websites using WordPress. I edited and fixed their existing websites. I was associated 
-		with the design of their LegalX mobile application.</p>
+		<p style="font-size:13px;">Worked as a software engineer intern at Senoark. Senoark is a communication 
+		agency company in Dhaka, Bangladesh.  I made websites using HTML5, CSS3,  JavaScript, JQuery, Bootstrap 
+		and WordPress. I edited and fixed their existing websites. I was associated with the design of their LegalX
+		mobile application.</p>
 		<p style="font-size:13px;">Contact:</p>
 		<p style="font-size:13px;">Muiz Shahabuddin</p>
 		<p style="font-size:13px;">-</p>
@@ -339,7 +342,7 @@
 	  
 		<div class="experienceBox boxShadow">
 		<p style="font-size:15px;"><b>Morangesoft, Peru — Software Engineer(Entry)</b></p>
-		<p style="font-size:11px;">May 2020 - </p>
+		<p style="font-size:11px;">May 2020 - June 2020</p>
 		<p style="font-size:13px;">Worked as a software engineer there. I made websites using HTML5, CSS3, Javascript, Bootstrap and PHP. I edited and fixed their existing 
 		websites. I was associated with the outside projects they received.</p>
 		<p style="font-size:13px;">Contact:</p>
@@ -355,11 +358,12 @@
 	<h1 id="skills" class="heading"><b>Skills</b></h1>
 	
 	<div class="skillGrid">
-	  <div><button class="skillButton">Html5</button></div>
+	  <div><button class="skillButton">Python</button></div>
 	  <div><button class="skillButton">Java</button></div>
 	  <div><button class="skillButton">Javascript</button></div> 
 	  <div><button class="skillButton">JQuery</button></div> 
-	  <div><button class="skillButton">React</button></div>
+	  <div><button class="skillButton">Django</button></div>
+	  <div><button class="skillButton">Html5</button></div>
 	  <div><button class="skillButton">CSS3</button></div>
 	  <div><button class="skillButton">Bootstrap4</button></div>
 	  <div><button class="skillButton">C</button></div>
@@ -371,31 +375,43 @@
 	<!--Projects-->
 	
 	<h1 id="projects" class="heading"><b>Projects</b></h1>
-	
+	<div style="width:100%;">
 	<div class="interestGrid">
 	  <div>
 		<p><a href="https://sadaafchowdhury.github.io/resume/">https://sadaafchowdhury.github.io/resume/</a></p>
-		<p>Made using Html5, CSS3, Bootsrtap4, Jquery and JavaScript.</p>
+		<p>Developed a portfolio application as a project using Html5, CSS3, Bootsrtap4, Jquery and JavaScript.</p>
+	  </div>
+	  <div>
+		<p><a href="http://samrinhassan.com/">http://samrinhassan.com/</a></p>
+		<p>Developed a website for a local boutique shop in Bangladesh using Html5, CSS3, Bootsrtap4, Jquery and JavaScript.</p>
+	  </div>
+	  <div>
+		<p><a href="https://github.com/SadaafChowdhury/suits">https://github.com/SadaafChowdhury/suits</a></p>
+		<p>Developed an ecommerce website for Making suits where users can register, login, check products and add to cart. And the admin can see the user information, check the order list and post new products. It was developed using Html5, CSS3, PHP, MySQL.</p>
+	  </div>
+	  <div>
+		<p><a href="https://github.com/SadaafChowdhury/resumeMaker">https://github.com/SadaafChowdhury/resumeMaker</a></p>
+		<p>Developed a resume maker using Html5, CSS3, JavaScript and php. You input your information and it makes your resume for you. You can choose your theme according to your preference and then either print it out or download it as a pdf.</p>
 	  </div>
 	  <div>
 		<p><a href="https://github.com/SadaafChowdhury/cse482">https://github.com/SadaafChowdhury/cse482</a></p>
-		<p>Made using Html5, CSS3, JavaScript, php and MySQL. Made it for a course as a team. I was in charge of the front-end part. It is a website on an online grocery delivery system.</p>
+		<p>Developed an online grocery delivery system using Html5, CSS3, JavaScript, php and MySQL. It was for a school project. I was in charge of the front-end part.</p>
 	  </div>
 	  <div>
 		<p><a href="https://bitbucket.org/nabeel_mohammed/fall2019.cse327.9.t4/">https://bitbucket.org/nabeel_mohammed/fall2019.cse327.9.t4/</a></p>
-		<p>Made using Django. Made it for a project in a course. It is a website on an online shop for furniture.</p>
+		<p>Developed using Django. Made it for a project in a course. It is a website on an online shop for furniture.</p>
 	  </div>  
 	  <div>
 		<p><a href="https://github.com/SadaafChowdhury/zoomv">https://github.com/SadaafChowdhury/zoomv</a></p>
-		<p>Made using WordPress. Made it for the company I was working at. It is a website for renting virtual addresses for businesses.</p>
+		<p>Developed using WordPress. Made it for the company I was working at. It is a website for renting virtual addresses for businesses.</p>
 	  </div>
 	</div>
-	
+	</div>
 	<!--About me-->
 	
 	<h1 id="moreInfo"class="heading"><b>More Information</b></h1>
 	
-	<div style="text-align:center;">
+	<div style="margin:auto;">
 	<div class="card">
 	  <div class="card-inner">
 		<div class="card-front">
@@ -403,7 +419,7 @@
 		</div>
 		<div class="card-back">
 		  <h1>Sadaaf Chowdhury</h1> 
-		  <p>Junior Front End Developer</p> 
+		  <p>Software Developer</p> 
 		  <p>c.sadaaf@gmail.com</p>
 		  <p>North South University</p>
 		  <p>BSCSE</p>
@@ -419,15 +435,11 @@
 	<h1 id="interests" class="heading"><b>Interests</b></h1>
 	
 	<div class="interestGrid">
-	  <div><img src="images/i1.jpg" alt="Problem Solving"></div>
-	  <div><img src="images/i2.jpg" alt="Gaming"></div>
-	  <div><img src="images/i3.jpg" alt="Travelling"></div>  
+	  <div><img src="images/i1.jpg" alt="Problem Solving"><br>Problem Solving</div>
+	  <div><img src="images/i2.jpg" alt="Gaming"><br>Gaming</div>
+	  <div><img src="images/i3.jpg" alt="Travelling"><br>Travelling</div>  
 	</div>
-	<div class="interestGrid">
-	  <div>Problem Solving</div>
-	  <div>Gaming</div>
-	  <div>Travelling</div>  
-	</div>
+	
 	<br><br>
   <!-- Footer -->
     <footer class="footer">
