@@ -1,0 +1,29 @@
+String num1;
+String num2;
+int j=0;
+for (int i = 0; i < num1.length(); i++) {  
+            if (num1.charAt(i) >= '0'
+                && num1.charAt(i) <= '9') { 
+                j=1 
+            } 
+            else { 
+                j=0; 
+            } 
+for (int i = 0; i < num2.length(); i++) {  
+            if (num2.charAt(i) >= '0'
+                && num2.charAt(i) <= '9') { 
+                j=1 
+            } 
+            else { 
+                j=0; 
+            } 
+
+if(num1.charAt(0)!=0 && num2.charAt(0)!=0 && j==1){
+int Integer_num1 = parseInt(num1);
+int Integer_num2 = parseInt(num2);
+
+if(Integer_num1<5100 && Integer_num2<5100){
+int sum = Integer_num1 + Integer_num2;
+}
+}
+
